@@ -12,4 +12,4 @@ This project displays user information fetched from the [JSONPlaceholder API](ht
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/jsonplaceholder-users-api.git
+   git clone https://github.com/Abdelouahed06/daiif_js_tp.git
