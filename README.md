@@ -4,7 +4,7 @@ This project displays user information fetched from the [JSONPlaceholder API](ht
 
 ## Features
 
-- Fetches user data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users).
+- Fetches user data from json file.
 - Displays user information like name, email, phone, and city in a responsive card layout.
 
 ## Setup Instructions
