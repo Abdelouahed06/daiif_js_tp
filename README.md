@@ -1,6 +1,6 @@
 # JSON Placeholder Users API Project
 
-This project displays user information fetched from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users). The data is displayed in a simple card layout on the webpage.
+This simple [project](https://abdelouahed06.github.io/daiif_js_tp/) displays user information fetched from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/users). The data is displayed in a simple card layout on the webpage.
 
 ## Features
 
