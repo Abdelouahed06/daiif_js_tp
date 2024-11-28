@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>jsonplaceholder_users_API</title>
+    <style>
+        body{
+            background-color: #ccd5ae;
+        }
+        .main {
+            margin: 50px 0 50px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .child {
+            padding: 20px;
+            color: #344e41;
+            text-align: center;
+            width: 300px;
+            background-color: #fefae0;
+            border: 1px solid #ccc;
+        }
+        span{
+            color: #9c5b19;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <div class="main" id="main">
+    </div>
+    <script>
+        fetch('./data.json')
+            .then(response => response.json())
+            .then(data => {
+                let output = "";
+                data.forEach(person => {
+                    output += `
+                    <div class="child">
+                        <img src="./user.png" alt="user pic"/>
+                        <h3><span>Name:</span> ${person.name}</h3> 
+                        <p><span>Email:</span> ${person.email}</p>
+                        <p><span>Phone:</span> ${person.phone}</p>
+                        <p><span>City:</span> ${person.address.city}</p>
+                    </div>
+                    `;
+                });
+
+                document.getElementById('main').innerHTML = output;
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
 </body>
+
 </html>
